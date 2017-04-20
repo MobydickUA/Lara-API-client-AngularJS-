@@ -1,0 +1,13 @@
+{
+  "name": "lara-api-client",
+  "description": "Sharpen my skills",
+  "version": "0.0.0",
+  "homepage": "https://github.com/",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.6.x",
+    "angular-route": "1.6.x",
+    "bootstrap": "3.3.x"
+  }
+}

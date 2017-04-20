@@ -1,0 +1,7 @@
+<ul>
+	<li ng-repeat="emp in $ctrl.employees">
+		<a ng-href="#!/employees/{{emp.emp_no}}">{{emp.last_name + ' ' + emp.first_name}}</a>
+		<span>, {{ emp.gender | gender }}</span>
+		<p></p>
+	</li>
+</ul>

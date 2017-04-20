@@ -1,0 +1,13 @@
+<ul class="nav navbar-nav">
+	<li ng-repeat="item in $ctrl.items">
+		<a ng-href="#!{{ item.url }}"> {{ item.title }} </a>
+	</li>
+	
+</ul>
+<li class="nav">
+		<form action="" class="navbar-form navbar-right">
+			<input type="text" name="last_name_q" placeholder="Search by surname">
+			<input type="text" name="first_name_q" placeholder="Search by name">
+			<button class="btn btn-default">Search</button>
+		</form>
+	</li>
