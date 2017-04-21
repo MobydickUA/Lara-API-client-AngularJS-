@@ -1,1 +1,8 @@
-<h1>hey</h1>
+<ul class="nav nav-tabs">
+  <li class="active"><a href="/">Overview</a></li>
+  <li><a href="#!/employees/{{}}/departments">Departments</a></li>
+  <li><a href="#">Salaries and positions</a></li>
+</ul>
+
+<h1> {{emp.first_name + ' ' + emp.last_name}} <h1>
+<h3>Born on: {{emp.birth_date | date : "dd MMM, yyyy"}} </h3>
