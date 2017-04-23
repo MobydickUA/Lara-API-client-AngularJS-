@@ -1,0 +1,18 @@
+<button class="btn btn-primary" ng-click="redirect('/employees/create')"> Add new employee</button>
+
+<ul>
+	<li ng-repeat="emp in employees">
+		<a ng-href="#!/employees/{{emp.emp_no}}">{{emp.last_name + ' ' + emp.first_name}}</a>
+		<span>, {{ emp.gender | gender }}</span>
+		<p></p>
+	</li>
+</ul>
+
+<uib-pagination 
+  ng-model="currentPage"
+  boundary-link-numbers="true"
+  ng-change="load()"
+  total-items="count"
+  max-size="5"  
+  boundary-links="true">
+</uib-pagination>

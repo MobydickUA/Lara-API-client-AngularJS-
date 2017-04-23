@@ -1,7 +1,7 @@
 var mainApp = angular.module('employeeMain', [
 		'topMenu', 
 		'ngRoute',
-		'employees',
+		'employeesList',
 		'employeeDetails'
 	]);
 

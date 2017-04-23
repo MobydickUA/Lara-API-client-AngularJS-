@@ -1,1 +1,3 @@
-var emloyees = angular.module('employees', []);
+angular.module('employees',[
+		'ngResource'
+	]);
