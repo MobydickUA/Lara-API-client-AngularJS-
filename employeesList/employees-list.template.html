@@ -1,12 +1,14 @@
 <button class="btn btn-primary" ng-click="redirect('/employees/create')"> Add new employee</button>
 
-<ul>
-	<li ng-repeat="emp in employees">
-		<a ng-href="#!/employees/{{emp.emp_no}}">{{emp.last_name + ' ' + emp.first_name}}</a>
-		<span>, {{ emp.gender | gender }}</span>
-		<p></p>
-	</li>
+<ul class="list-group">
+  <a ng-repeat="emp in employees" ng-href="#!/employees/{{emp.emp_no}}"">  
+  <li  class="list-group-item">
+    {{emp.last_name + ' ' + emp.first_name}}
+    <span>, {{ emp.gender | gender }}</span>
+  </li>
+  </a>
 </ul>
+
 
 <uib-pagination 
   ng-model="currentPage"

@@ -2,7 +2,9 @@ var mainApp = angular.module('employeeMain', [
 		'topMenu', 
 		'ngRoute',
 		'employeesList',
-		'employeeDetails'
+		'employeeDetails',
+		'departmentsList',
+		'departmentDetails'
 	]);
 
 mainApp.filter('gender', function() {

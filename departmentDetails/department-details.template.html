@@ -1,0 +1,10 @@
+<h1> {{ data.dept_name }} </h1>
+<h3> Heads: </h3>
+<ul class="list-group">
+	<a ng-repeat="head in data.department_heads" ng-href="#!/employees/{{ head.emp_no }}">
+		<li class="list-group-item">
+			{{ head.first_name + ' ' + head.last_name }}
+			{{ $index == 0 ? '( Current head )' : '' }}
+		</li>
+	</a>
+</ul>

@@ -12,8 +12,6 @@ angular.module('employeeMain')
 
 			$scope.store = function(){
 				var response = Employees.save($scope.emp);
-				if(response.status != 'OK')
-					console.log(response.status);
 			}
 		}
 	});
